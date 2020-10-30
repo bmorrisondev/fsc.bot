@@ -143,10 +143,9 @@ const getLevelByXp = function (xp) {
  * @returns {Number} The XP required
  * @param {Number} level - The level to calculate the required XP for
  */
-// TODO: THIS IS BROKEN!!!
-// exports.getXpByLevel = function (level) {
-//   return Math.ceil((level / levelUpConst)^2)
-// }
+exports.getXpByLevel = function (level) {
+  return Math.ceil(Math.pow(level / levelUpConst, 2))
+}
 
 /**
  * Scans all users and determines if they should lose XP based on activity.
